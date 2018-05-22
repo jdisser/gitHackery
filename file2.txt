@@ -1,1 +1,2 @@
 I am file 2
+a bad  change to file2
