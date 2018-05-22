@@ -243,3 +243,41 @@ EPILOG
 
 Unless you made a change in .gitignore! which will add unwanted files in the
 repo! But removing stuff is way easier than restoring it!
+
+Here's the whole git log for those of you scoring along at home, please
+mark your scorecards accordingly!
+
+
+
+    commit c598890e08242714b949cf4e4e67d1b9ccf853f9
+        now restore file1.txt back to a good state using git checkout 36caed37 file1.txt
+
+    commit 7bef7c911463ca14fd98da059a4ef1d6585d4328
+        use git revert d9d54c03b to revert the bad change to file2
+
+    commit 0c9db28bab6c8fcc71cc5ecd37be88bba87be588
+        restore file1.txt using git checkout TheCommitNumber TheFileName.whatever
+
+    commit 39870484853a8d0c8382dbb0aef313600165fcd2
+        yet another good change to file3
+
+    commit 95b2606921f11884877e0e2d9f5177b2067fd1ee
+        Another good change to file3
+
+    commit b07c2658149dd4d3ad59cf08728530e6e52e92be
+        I just removed file1gaa
+
+    commit e5bfac1d4f1490de9a4ec8677571257502c1fa51
+        added a log file and gitignore
+
+    commit df80e8d21548e0e68e25c209306e6388e43ab656
+        another good change to file2
+
+    commit 36caed3792a1b3e65b6d767233330d43e6771d17
+        a good change to file 3
+
+    commit d9d54c03bb9b0f75333e248d2a2dbd47e9ab9d5e
+        a good change to file1 and a bad change to file2
+
+    commit 27abe8e3f7e8b1a13c95bf549f641e8ac3fd1191
+        initial commit
