@@ -1,3 +1,4 @@
 I am file 3
 a good change to file3
 another good change to file3
+yet another good change to file3.txt
