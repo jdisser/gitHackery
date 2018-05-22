@@ -1,4 +1,10 @@
-I created three text files and initialized git on the directory
+What if you delete a file you later realize you needed or you make a change
+that doesn't turn out so good but you're many commits down the road from
+the horror of these changes???
+
+To see how to resolve this I created three text files and initialized git
+on the directory.
+
 The files initially look like this...
 
     file1.txt
@@ -118,8 +124,10 @@ of the repo, and complicating matters...
 So now the problem is that I need to get file1.txt back and get rid of that
 bad change in file2.txt ON GITHUB!!! So this limits what can be done with
 git reset since this happens in the local repo and if you try to push it git
-complains that there are missing commits. You CAN use git checkout on a file
-instead of a whole repo. Checkout the commit before you deleted the file
+complains that there are missing commits.
+
+But all is not lost. *You CAN use git checkout on a single file*
+instead of a whole repo. You have to checkout the commit before the deletion
 and then make a commit to restore it like this...
 
   NOTE: you can use just a portion of the commit number about 7 characters works
@@ -207,11 +215,11 @@ But we're now missing the good change to file1.txt! It got reverted along with
 file2.txt! But all is not lost, it's not gone in the sense it doesn't exist since
 we can go back in time with our new friend
 
-  git checkout <commit> <filename>
+    git checkout <commit> <filename>
 
 and after we do this...
 
-  git checkout 36caed37 file1.txt
+    git checkout 36caed37 file1.txt
 
 our files look like this...
 
