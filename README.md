@@ -179,13 +179,13 @@ Yikes! I get this message...
 
 Which is very helpful thanks to our friends at Git! So looking at file2.txt now we see
 
-  file2.txt
-    I am file 2
-    <<<<<<< HEAD
-    a bad  change to file2
-    another good change to file2
-    =======
-    >>>>>>> parent of d9d54c0... a good change to file1 and a bad change to file2
+    file2.txt
+      I am file 2
+      <<<<<<< HEAD
+      a bad  change to file2
+      another good change to file2
+      =======
+      >>>>>>> parent of d9d54c0... a good change to file1 and a bad change to file2
 
 so we need to edit file2.txt and then do a git add file2.txt to put it in
 the working tree. After we do that our files look like this...
@@ -230,3 +230,8 @@ our files look like this...
       yet another good change to file3.txt
 
 And all is again right with the world....
+
+EPILOG
+
+Unless you made a change in .gitignore! which will add unwanted files in the
+repo! But removing stuff is way easier than restoring it!
